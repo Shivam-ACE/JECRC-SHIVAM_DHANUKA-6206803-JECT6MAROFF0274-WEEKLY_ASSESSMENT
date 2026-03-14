@@ -1,3 +1,5 @@
+#Write a Selenium script that opens multiple websites sequentially, including a few e-commerce sites [souled store, nike... any], a news website, and the official Python website. The script should wait for 3 seconds before opening and later should print the title of each page. finally close the browser.  
+
 from selenium import webdriver
 import time
 
