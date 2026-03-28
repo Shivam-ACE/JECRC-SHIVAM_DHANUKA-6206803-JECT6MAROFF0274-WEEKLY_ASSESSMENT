@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-03-28T14:32:08.675501" rpa="false" schemaversion="5">
+<suite id="s1" name="Task1" source="I:\WEEKLY_ASSESSMENT_CAP\Assessment week3_28-03-2026\Task1.robot">
+<test id="s1-t1" name="Myntra Automation using Robot Framework" line="22">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-28T14:32:09.146349" level="INFO">Opening browser 'chrome' to base url 'https://www.myntra.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-28T14:32:09.145839" elapsed="4.749248"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-28T14:32:13.895951" elapsed="0.115363"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T14:32:15.105902" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T14:32:14.011960" elapsed="1.094192"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2026-03-28T14:32:15.107527" level="INFO">Simulating Mouse Over on element 'xpath=//a[@data-group="women"]'.</msg>
+<arg>xpath=//a[@data-group="women"]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2026-03-28T14:32:15.106788" elapsed="0.375464"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T14:32:16.484335" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T14:32:15.482873" elapsed="1.001759"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-28T14:32:16.485963" level="INFO">Clicking element 'xpath=//a[text()="Lehenga Cholis"]'.</msg>
+<arg>xpath=//a[text()="Lehenga Cholis"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-28T14:32:16.485456" elapsed="2.534519"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T14:32:21.022073" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T14:32:19.020621" elapsed="2.001817"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//span[@style="background-color: rgb(0, 116, 217);"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-28T14:32:21.023232" elapsed="0.314004"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T14:32:23.339223" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T14:32:21.337961" elapsed="2.001574"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-28T14:32:23.340944" level="INFO">Clicking element 'xpath=//span[@style="background-color: rgb(0, 116, 217);"]/parent::label/div'.</msg>
+<arg>xpath=//span[@style="background-color: rgb(0, 116, 217);"]/parent::label/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-28T14:32:23.340443" elapsed="0.255599"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T14:32:25.598358" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T14:32:23.596907" elapsed="2.001678"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-28T14:32:25.654673" level="INFO">${prod_name} = MADHURAM</msg>
+<var>${prod_name}</var>
+<arg>xpath=//li[@id="36763558"]//h3</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-28T14:32:25.599215" elapsed="0.055561"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${prod_name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-28T14:32:25.655401" elapsed="0.000825"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-28T14:32:25.656757" elapsed="2.517417"/>
+</kw>
+<status status="PASS" start="2026-03-28T14:32:09.143923" elapsed="19.030986"/>
+</test>
+<status status="PASS" start="2026-03-28T14:32:08.677521" elapsed="19.499114"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task1" id="s1" pass="1" fail="0" skip="0">Task1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
